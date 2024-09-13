@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.mainDiv {
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.profileHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headingDiv {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.headingDiv h1 {
+    font-size: 50px;
+}
+
+.headingDiv p {
+    font-size: 30px;
+}
+
+.imgContainer {
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.imgContainer img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.personalInfo p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headings {
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.action-buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    width: 20%;
+    height: 30px;
+    margin-top: 20px;
+    background-color: skyblue;
+    font-size: 18px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    gap: 50px;
+}
+
+@media (max-width: 768px) {
+    .profileHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgContainer {
+        margin-top: 10px;
+    }
+}
+/* Add this to modern.css */
+@media print {
+    .action-buttons {
+        display: none;
+    }
+}
+
